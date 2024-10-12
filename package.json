@@ -1,0 +1,32 @@
+{
+  "name": "safe-return",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "error-handling",
+    "promise",
+    "utility",
+    "safe",
+    "callback",
+    "function",
+    "asynchronous",
+    "result",
+    "error",
+    "safety",
+    "programming",
+    "dev-tools",
+    "npm-package"
+  ],
+  "author": "Miguel Zacca",
+  "license": "ISC",
+  "description": "A TypeScript utility library that provides a safe way to handle function and promise results, ensuring errors are captured and returned in a consistent format. Ideal for developers seeking to simplify error handling and improve code reliability.",
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
