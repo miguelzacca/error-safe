@@ -1,4 +1,4 @@
-# safe-return
+# error-safe
 
 A TypeScript utility library that provides a safe way to handle function and promise results, ensuring errors are captured and returned in a consistent format. Ideal for developers seeking to simplify error handling and improve code reliability.
 
@@ -10,20 +10,20 @@ A TypeScript utility library that provides a safe way to handle function and pro
 
 ## Installation
 
-You can install **`safe-return`** via npm:
+You can install **`error-safe`** via npm:
 
 ```bash
-npm install safe-return
+npm install error-safe
 ```
 
 ## Usage
 
-Here's how to use safe-return in your TypeScript project:
+Here's how to use error-safe in your TypeScript project:
 
 **Safe Function Call**
 
 ```ts
-import { safe } from 'safe-return'
+import { safe } from 'error-safe'
 
 const safeFunction = safe((x: number) => {
   if (x < 0) {
