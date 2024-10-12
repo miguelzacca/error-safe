@@ -1,6 +1,6 @@
 {
   "name": "error-safe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,10 +23,27 @@
     "npm-package"
   ],
   "author": "Miguel Zacca",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A TypeScript utility library that provides a safe way to handle function and promise results, ensuring errors are captured and returned in a consistent format. Ideal for developers seeking to simplify error handling and improve code reliability.",
   "devDependencies": {
     "tsx": "^4.19.1",
     "typescript": "^5.6.3"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "types": "./lib/index.d.ts",
+  "dependencies": {
+    "esbuild": "^0.23.1",
+    "get-tsconfig": "^4.8.1",
+    "resolve-pkg-maps": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelzacca/error-safe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miguelzacca/error-safe/issues"
+  },
+  "homepage": "https://github.com/miguelzacca/error-safe#readme"
 }
