@@ -1,7 +1,8 @@
 {
   "name": "error-safe",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "lib/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
@@ -33,11 +34,6 @@
     "lib": "lib"
   },
   "types": "./lib/index.d.ts",
-  "dependencies": {
-    "esbuild": "^0.23.1",
-    "get-tsconfig": "^4.8.1",
-    "resolve-pkg-maps": "^1.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miguelzacca/error-safe.git"
