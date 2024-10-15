@@ -48,9 +48,6 @@ function createSafe<T extends Func>(target: T): ErrorSafeFunc<T> {
   }) as ErrorSafeFunc<T>
 }
 
-function safe<T extends Promise<any>>(target: T): ErrorSafeResult<T>
-function safe<T extends Func>(target: T): ErrorSafeResult<T>
-
 /**
  * A utility function to safely execute promises or functions, returning an error-first tuple.
  *
@@ -59,6 +56,9 @@ function safe<T extends Func>(target: T): ErrorSafeResult<T>
  * const [err, res] = safe(() => mySyncFunction(10, 20))
  * const [err, res] = await safe(() => myAsyncFunction(10, 20))
  */
+function safe<T extends Promise<any>>(target: T): ErrorSafeResult<T>
+function safe<T extends Func>(target: T): ErrorSafeResult<T>
+
 function safe<T extends Promise<any> | Func>(target: T): ErrorSafeResult<T> {
   if (target instanceof Promise) {
     return createSafePromise(target) as ErrorSafeResult<T>
