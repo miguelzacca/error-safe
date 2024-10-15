@@ -1,8 +1,8 @@
 type Func = (...args: any[]) => any
 
 type ErrorSafeRaw<T extends Func | Promise<any>> = T extends Promise<any>
-  ? [error: unknown, result: Awaited<T>]
-  : [error: unknown, result: Awaited<ReturnType<Extract<T, Func>>>]
+  ? [error: any, result: Awaited<T>]
+  : [error: any, result: Awaited<ReturnType<Extract<T, Func>>>]
 
 type ErrorSafeResult<T extends Func | Promise<any>> = T extends Promise<any>
   ? Promise<ErrorSafeRaw<T>>
