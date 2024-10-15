@@ -1,4 +1,4 @@
-# error-safe
+# error-safe (deprecated README)
 
 A TypeScript utility library that provides a safe way to handle function and promise results, ensuring errors are captured and returned in a consistent format. Ideal for developers seeking to simplify error handling and improve code reliability.
 
